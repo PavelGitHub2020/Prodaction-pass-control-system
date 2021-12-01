@@ -1,0 +1,20 @@
+﻿ProdactionPassControlSystem
+
+
+winexe
+C#
+.cs
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\ProdactionPassControlSystem\obj\Debug\
+ProdactionPassControlSystem
+none
+false
+DEBUG;TRACE
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\ProdactionPassControlSystem\App.xaml
+11-1854570745
+
+18-1557302705
+17-1633287653
+AddWorker.xaml;ChangeTheWorkShedule.xaml;ChangingWorkerInformation.xaml;FindWorker.xaml;FormForChangingWorkerInformation.xaml;GetAll.xaml;InformationAboutShifts.xaml;InformationAboutUseThePass.xaml;MainWindow.xaml;PassageControl.xaml;Remove.xaml;
+
+False
+

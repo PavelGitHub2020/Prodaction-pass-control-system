@@ -1,0 +1,6 @@
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\LogicClassesLibrary\bin\x64\Debug\LogicClassesLibrary.dll
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\LogicClassesLibrary\bin\x64\Debug\LogicClassesLibrary.pdb
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\LogicClassesLibrary\obj\x64\Debug\LogicClassesLibrary.csprojAssemblyReference.cache
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\LogicClassesLibrary\obj\x64\Debug\LogicClassesLibrary.csproj.CoreCompileInputs.cache
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\LogicClassesLibrary\obj\x64\Debug\LogicClassesLibrary.dll
+B:\учебный проект\для примеров\C#Lessons\ProdactionPassControlSystem\LogicClassesLibrary\obj\x64\Debug\LogicClassesLibrary.pdb

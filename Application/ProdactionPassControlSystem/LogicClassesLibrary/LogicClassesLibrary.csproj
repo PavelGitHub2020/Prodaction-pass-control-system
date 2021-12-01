@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89E5044E-4CE0-476A-B9E7-BF44E97A946E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LogicClassesLibrary</RootNamespace>
+    <AssemblyName>LogicClassesLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\IAddColumnsInGrid.cs" />
+    <Compile Include="BLL\IAudioMessageAboutCheckWorkerIdentificator.cs" />
+    <Compile Include="BLL\IAudioMessageAboutDelete.cs" />
+    <Compile Include="BLL\IAudioMessageAboutEnterWorkerId.cs" />
+    <Compile Include="BLL\IAudioMessageAboutHereIsResult.cs" />
+    <Compile Include="BLL\IAudioMessageAboutInformationAboutWorkerChanged.cs" />
+    <Compile Include="BLL\IAudioMessageAboutNotAllParametersAreFilledIn.cs" />
+    <Compile Include="BLL\IAudioMessageAboutNothingWasFound.cs" />
+    <Compile Include="BLL\IAudioMessageAboutResetInputParameters.cs" />
+    <Compile Include="BLL\IAudioMessageAboutSave.cs" />
+    <Compile Include="BLL\IAudioMessageAboutTheInputStringHadAnIncorretFormat.cs" />
+    <Compile Include="BLL\IAudioMessageAboutThereIsNoWorkerWithSuchIdentificator.cs" />
+    <Compile Include="BLL\IAudioMessageAboutTimeIsNotSet.cs" />
+    <Compile Include="BLL\IAudioMessageAboutWhatManagedToFind.cs" />
+    <Compile Include="BLL\IAudioMessageAboutWorkerIdOrShiftDoesNotMatch.cs" />
+    <Compile Include="BLL\IChoosingDayFirstShift.cs" />
+    <Compile Include="BLL\IChoosingDayFourthShift.cs" />
+    <Compile Include="BLL\IChoosingDaySecondShift.cs" />
+    <Compile Include="BLL\IChoosingDayThirdShift.cs" />
+    <Compile Include="BLL\IChoosingTheNumberOfDay.cs" />
+    <Compile Include="BLL\IFillingGrid.cs" />
+    <Compile Include="BLL\IFillingWithData.cs" />
+    <Compile Include="BLL\IGetArrayOfValuesOfShifts.cs" />
+    <Compile Include="BLL\IGetInformationAboutShifts.cs" />
+    <Compile Include="BLL\IGetSpecificDay.cs" />
+    <Compile Include="BLL\IGetValueOfShifts.cs" />
+    <Compile Include="BLL\IHighlightingSaturdaysAndSundays.cs" />
+    <Compile Include="BLL\ISetOfParameters3.cs" />
+    <Compile Include="BLL\ISetOfParameters.cs" />
+    <Compile Include="BLL\ISetOfParameters2.cs" />
+    <Compile Include="BLL\ISetOfParameters4.cs" />
+    <Compile Include="BLL\ISetOfParameters5.cs" />
+    <Compile Include="BLL\ISetOfParameters6.cs" />
+    <Compile Include="BLL\ISettingLanguageParameters.cs" />
+    <Compile Include="BLL\ISettingSoundParameters.cs" />
+    <Compile Include="BLL\IStringMessage.cs" />
+    <Compile Include="DAL\AddressDAO.cs" />
+    <Compile Include="DAL\BaseDAO.cs" />
+    <Compile Include="DAL\IAddressDAO.cs" />
+    <Compile Include="DAL\IBaseDAO.cs" />
+    <Compile Include="DAL\IPassDAO.cs" />
+    <Compile Include="DAL\IPhotoDAO.cs" />
+    <Compile Include="DAL\IScheduleOfShiftsDAO.cs" />
+    <Compile Include="DAL\IWorkerDAO.cs" />
+    <Compile Include="DAL\PassDAO.cs" />
+    <Compile Include="DAL\PhotoDAO.cs" />
+    <Compile Include="DAL\ScheduleOfShiftsDAO.cs" />
+    <Compile Include="DAL\WorkerDAO.cs" />
+    <Compile Include="Entity\Address.cs" />
+    <Compile Include="Entity\ControlOfTheUseOfThePass.cs" />
+    <Compile Include="Entity\FieldsForChangingTheWorkShedule.cs" />
+    <Compile Include="Entity\Pass.cs" />
+    <Compile Include="Entity\Photo.cs" />
+    <Compile Include="Entity\ScheduleOfShift.cs" />
+    <Compile Include="Entity\Worker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

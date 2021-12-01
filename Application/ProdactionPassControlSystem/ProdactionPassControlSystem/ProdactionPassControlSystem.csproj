@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{062F5BD9-B058-4976-BD26-1AD9D03DE54D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProdactionPassControlSystem</RootNamespace>
+    <AssemblyName>ProdactionPassControlSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ChangeTheWorkShedule.xaml.cs">
+      <DependentUpon>ChangeTheWorkShedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangingWorkerInformation.xaml.cs">
+      <DependentUpon>ChangingWorkerInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormForChangingWorkerInformation.xaml.cs">
+      <DependentUpon>FormForChangingWorkerInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationAboutUseThePass.xaml.cs">
+      <DependentUpon>InformationAboutUseThePass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationAboutUseThePassToColorConverter.cs" />
+    <Compile Include="PassageControl.xaml.cs">
+      <DependentUpon>PassageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PassageControlToColorConverter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Remove.xaml.cs">
+      <DependentUpon>Remove.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddWorker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangeTheWorkShedule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangingWorkerInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindWorker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormForChangingWorkerInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GetAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationAboutShifts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationAboutUseThePass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AddWorker.xaml.cs">
+      <DependentUpon>AddWorker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartmentNameToColorConvert.cs" />
+    <Compile Include="FindWorker.xaml.cs">
+      <DependentUpon>FindWorker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GetAll.xaml.cs">
+      <DependentUpon>GetAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationAboutShifts.xaml.cs">
+      <DependentUpon>InformationAboutShifts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PassageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Remove.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogicClassesLibrary\LogicClassesLibrary.csproj">
+      <Project>{89e5044e-4ce0-476a-b9e7-bf44e97a946e}</Project>
+      <Name>LogicClassesLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\удалено.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\сохранено.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\график_изменен.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parameters_reseted.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\here_is_the_result.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all_workers.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\that_is_all_there_is.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\here_Is_what_managed_to_find.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_the_worker_id.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule_changed.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informatin_about_the_worker_saved.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker_information_changed.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleted.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_all_parameters_are_filled_in.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\введите_идентификаиор_работника.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\информация_о_работнике_сохранена.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\информацияя_о_работнике_изменена.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\не_все_параметры_выставлены.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\сделано.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вот_что_удалось_найти.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\это_все_что_есть.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\все_работники.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вот_результат.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\параметры сброшены.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saved.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageForSound\sound_of.png" />
+    <Resource Include="ImageForSound\sound_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageForLanguage\russianIcon3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageForLanguage\englishIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ничего_не_найдено.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nothing_was_found.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\нет_работника.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\there_is_no_worker.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\не_совпадают.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doesn%27t_match.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\время_не_установлено.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the_time_is_not_set.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the_input_string_had_incorrect_format.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\входная_строка_имела_неверный_формат.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_worker_id.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\проверить_идентификатор_работника.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
